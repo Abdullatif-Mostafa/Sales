@@ -1,0 +1,32 @@
+.card-img {
+    object-fit: cover; /* Ensure the image covers the card area */
+  }
+  
+  @media (max-width: 768px) {
+    .card-img {
+      height: 300px; /* Adjust height for smaller screens */
+    }
+  
+    .card-title {
+      font-size: 2.5rem; /* Smaller font size for smaller screens */
+    }
+  
+    .card-text {
+      font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card-img {
+      height: 200px; /* Further adjustment for very small screens */
+    }
+  
+    .card-title {
+      font-size: 2rem; /* Further reduce font size */
+    }
+  
+    .card-text {
+      font-size: 1.2rem; /* Further reduce font size */
+    }
+  }
+  

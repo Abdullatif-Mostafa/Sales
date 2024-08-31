@@ -1,0 +1,26 @@
+@media(max-width:767px)
+{
+  .showProducts
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .showProducts div
+  {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 10px auto; */
+}
+.showProducts .cardDetails .small
+{
+  background-color: black !important;
+  margin-bottom: 153px !important;
+}
+}

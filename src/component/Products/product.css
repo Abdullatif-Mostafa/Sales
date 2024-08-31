@@ -1,0 +1,66 @@
+.buttons button,
+.button {
+  border: 1px solid #242259 !important;
+  background-color: transparent;
+    padding: 6px 15px !important;
+
+}
+
+.buttons button:hover,
+.button:hover {
+  background-color: #242259 !important;
+  color: #fff;
+}
+.buttons .btn {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .buttons .btn {
+    font-size: 1.2rem; /* Smaller font size */
+  }
+}
+
+@media (max-width: 576px) {
+  .buttons .btn {
+    font-size: 1rem; /* Further reduce font size */
+    min-width: 120px; /* Adjust minimum width */
+  }
+}
+
+.heart-icon {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.heart-icon svg {
+  overflow: hidden;
+}
+
+.heart-icon.favorite {
+  color: red;
+  background: rgb(82, 82, 82)
+}
+
+@media(max-width:797px)
+{
+  .showProducts
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .showProducts div
+  {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 10px auto; */
+  }
+}

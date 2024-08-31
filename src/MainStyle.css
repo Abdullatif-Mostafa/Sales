@@ -1,0 +1,242 @@
+/* Login and Rgister  */
+.login-container {
+  max-width: 100%;
+  background: url("./Images/sales.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 84px;
+
+}
+
+.login {
+  width: 400px !important;
+  min-height: 400px;
+  display: flex;
+  margin-top: 2% !important;
+  flex-direction: column;
+  background-color: #EEEFF3;
+  align-items: center;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border: 1px solid #d7d2d2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+form .div {
+  /* padding: 8px 10px; */
+  display: flex;
+  align-items: center;
+  background-color: #EEEFF3;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-size: 20px;
+  text-transform: capitalize;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.fa-eye-slash {
+  cursor: pointer;
+}
+
+
+
+/* form .div input {
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #000;
+  text-transform: capitalize;
+} */
+
+#remember {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.checkbox {
+  margin-top: -15px !important;
+  margin-bottom: 0;
+  border: none !important;
+  outline: none;
+  gap: 5px;
+  font-size: 17px;
+}
+
+.checkbox label {
+  cursor: pointer;
+}
+
+form .div .btn {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  padding: 8px 10px;
+}
+
+form input {
+  color: grey;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.errorMesg {
+  color: #ff0000;
+  font-size: 17px;
+  margin-top: -10px;
+}
+
+/* setting page  */
+.privacy-security .footer,
+.advanced-terms-container .footer,
+.about-footer,
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #261F55 !important;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+}
+
+.footer h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 1.1em;
+}
+
+.footer a {
+  color: #ffdd57;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ffcf12 !important;
+}
+
+/* caterogy card */
+.categoryCard {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+.categoryCard:hover {
+  background-color: #F2C1B6 !important;
+  cursor: pointer;
+}
+
+/* Contact Page  */
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    -o-transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    -o-transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

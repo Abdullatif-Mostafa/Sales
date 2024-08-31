@@ -1,0 +1,82 @@
+.Contact {
+  max-width: 100%;
+  background: url("../../Images/AdobeStock_223290240-1-2-scaled.webp") center/cover no-repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 60px 0;
+}
+
+.Contact .overlay {
+  width: 100%;
+  height: 100%;
+  padding: 60px 20px;
+  background-color: rgba(248, 244, 244, 0.5);
+  border-radius: 8px;
+}
+
+.contact-form-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #242259;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.buttons button,
+.button {
+  border: 1px solid #242259;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #242259;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons button:hover,
+.button:hover {
+  background-color: #242259;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .Contact .overlay {
+    padding: 15px;
+  }
+
+  .contact-form-container {
+    padding: 15px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+  }
+}
