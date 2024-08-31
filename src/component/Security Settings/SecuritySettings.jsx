@@ -19,10 +19,10 @@ const SecuritySettings = () => {
   const navigate = useNavigate();
   const User = useSelector((state) => state.auth?.user);
   console.log("user ", User);
-  const oldPassword = User.password;
+  const oldPassword = User?.password;
   console.log(" oldPassword ", oldPassword);
-  console.log(" email ", User.email);
-  console.log(" id ", User._id);
+  // console.log(" email ", User.email);
+  // console.log(" id ", User._id);
 
   if (!User) {
     return <div>Loading...</div>;
