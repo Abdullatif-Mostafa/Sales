@@ -27,7 +27,6 @@ import OffersPage from "./component/Offers/Offers";
 import OffersPageDetails from "./component/Offers/OffersPageDetails";
 import AboutPage from './component/About/About';
 import Cart from './component/Cart/Cart';
-
 function App() {
   return (
     <>

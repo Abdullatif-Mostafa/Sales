@@ -6,10 +6,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 84px;
-
+  /* margin-top: 84px; */
 }
-
 .login {
   width: 400px !important;
   min-height: 400px;
@@ -49,17 +47,6 @@ form .div {
 .fa-eye-slash {
   cursor: pointer;
 }
-
-
-
-/* form .div input {
-  width: 90%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  color: #000;
-  text-transform: capitalize;
-} */
 
 #remember {
   width: 20px;
@@ -233,10 +220,25 @@ form input {
   from {
     opacity: 0;
     transform: translateY(20px);
-  }
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+}
 
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+@media (max-width:480px)
+{
+  .login{
+    width: 90% !important;
+  }
+  .checkbox
+  {
+    font-size: 10px !important;
+  }
+  
 }

@@ -24,7 +24,7 @@
 @media (max-width: 576px) {
   .buttons .btn {
     font-size: 1rem; /* Further reduce font size */
-    min-width: 120px; /* Adjust minimum width */
+    /* min-width: 120px; Adjust minimum width */
   }
 }
 

@@ -18,7 +18,7 @@ export default function Footer() {
     Swal.fire({
       title: 'Login Required',
       text: 'To proceed, please log in. If you don\'t have an account, you can create one now.',
-      icon: 'warning',
+      // icon: 'warning',
       showCancelButton: true,
       confirmButtonText: 'Login',
       cancelButtonText: 'Close',

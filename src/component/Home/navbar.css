@@ -85,3 +85,10 @@ color: #fed326 !important;
   .nav-link.dropdown-toggle::after {
     display: none;
   }
+  @media (max-width:480px) {
+    .navbar {
+      display: none;
+      min-height: 90px;
+    }
+    
+  }

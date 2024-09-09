@@ -126,7 +126,7 @@ const Register = () => {
           Swal.fire({
             title: "Welcome!",
             text: `Hello, ${formData.username}. Sign-up successful.`,
-            icon: "success",
+            // icon: "success",
             timer: 1500, // Changed to a number
             confirmButtonText: "Thanks",
             showClass: {
@@ -162,44 +162,7 @@ const Register = () => {
             },
           });
         }
-        
-      //   Swal.fire({
-      //     title: "Welcome!",
-      //     text: `Hello, ${formData.username}. Sign-up successful.`,
-      //     icon: "success",
-      //     timer:"1500",
-      //     confirmButtonText: "Thanks",
-      //     showClass: {
-      //       popup: 'animate__animated animate__fadeInDown'
-      //     },
-      //     hideClass: {
-      //       popup: 'animate__animated animate__fadeOutUp'
-      //     },
-      //   }).then(() => {
-      //     setFormData({
-      //       username: "",
-      //       email: "",
-      //       password: "",
-      //       confirmPassword: "",
-      //     });
-      //     navigate("/");
-      //   });
-      // } catch (error) {
-      //   console.error("this user is already exists:", error);
-      //   Swal.fire({
-      //     // title: "Error!",
-      //     title: "this user is already exists",
-      //     icon: "error",
-      //     confirmButtonText: "Try Again",
-      //     titleColor: "text-danger",
-      //     showClass: {
-      //       popup: 'animate__animated animate__fadeInDown'
-      //     },
-      //     hideClass: {
-      //       popup: 'animate__animated animate__fadeOutUp'
-      //     },
-      //   });
-      // }
+
 
 
     } else {
@@ -208,8 +171,8 @@ const Register = () => {
   };
   
   return (
-    <div className="login-container" style={{ marginTop: "73px", paddingTop: "20px", height: "100vh" }}>
-      <div >
+    <div className="login-container" style={{  paddingTop: "", height: "100vh" }}>
+      <div className="box">
         <div className="container login contact-form">
           <h2 style={{ marginBottom: "20px", paddingTop: "20px" }}> Sign Up</h2>
           <form onSubmit={handleSubmit}>

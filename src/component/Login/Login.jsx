@@ -6,7 +6,6 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Swal from "sweetalert2";
 import { loginUser } from "../../RTK/Slices/AuthSlice";
-
 const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [errors, setErrors] = useState({});
@@ -79,7 +78,7 @@ const Login = () => {
       Swal.fire({
         title: "Login Successful!",
         text: "Welcome back!",
-        icon: "success",
+        // icon: "success",
         confirmButtonText: "Go to Home",
         timer: 1500, // Auto-close after 1.5 seconds
         timerProgressBar: true,
@@ -102,7 +101,7 @@ const Login = () => {
     if (error) {
       Swal.fire({
         title: "Login Failed",
-        icon: "error",
+        // icon: "error",
         confirmButtonText: "Try Again",
         showClass: {
           popup: 'animate__animated animate__fadeInDown' 
@@ -127,10 +126,10 @@ const Login = () => {
   }, [error]);
 
   return (
-    <div className="login-container" style={{ marginTop: "73px", paddingTop: "20px", height: "100vh",width:"100%" }}>
-      <div >
-        <div className="container login contact-form" style={{ marginTop: "180px" }}>
-          <h2 style={{ marginBottom: "20px", paddingTop: "50px" }}>Sign In</h2>
+    <div className="login-container">
+      <div className="box">
+        <div className="container login contact-form">
+          <h2 style={{ marginBottom: "20px", paddingTop: "30px" }}>Sign In</h2>
           <form onSubmit={handleLoginData}>
             <div className="div">
               {/* Email */}
@@ -184,9 +183,9 @@ const Login = () => {
                   Remember me
                 </label>
                 <Link
+                  className="forgotpassword"
                   style={{
                     fontSize: "17px",
-                    marginLeft: "20px",
                     color: "",
                   }}
                   to={"/forgotpassword"}
@@ -196,13 +195,13 @@ const Login = () => {
               </div>
               <button
                 style={styles.btnn}
-                className="btn text-center"
+                className="btn text-center submitBtn mb-0"
                 type="submit"
                 disabled={loading}
               >
                 {loading ? "Signing In..." : "Sign In"}
               </button>
-              <small style={{ fontSize: "17px" }} className="">
+              <small style={{ fontSize: "" }} className=" noAcount">
                 Not Have An Account?
                 <Link to="/register" style={{ marginLeft: "6px" }}>
                   Register

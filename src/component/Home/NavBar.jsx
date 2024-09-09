@@ -20,7 +20,7 @@ const NavBar = () => {
   const handleLogout = () => {
     Swal.fire({
       title: "Do You Want to Logout?",
-      icon: "question",
+      // icon: "question",
       confirmButtonText: "Yes",
       showCancelButton: true,
       showClass: {
@@ -213,11 +213,11 @@ const NavBar = () => {
                     className="btn btn-outline-light"
                   >
                     <i className="fa fa-heart me-2 fs-6"></i>
-                    Favorites({favoriteSize})
+                    ({favoriteSize})
                   </Link>
 
-                  <Link to="/cart" className="btn btn-outline-light ms-2 ">
-                    <i className="fa fa-shopping-cart me-2"></i>Cart({cartSize})
+                  <Link to="/cart" className="btn btn-outline-light ms-2 " style={{width:"fit-content"}}>
+                    <i className="fa fa-shopping-cart me-2"></i>({cartSize})
                   </Link>
                   <div className="nav-item dropdown ms-3">
                     <a
@@ -306,7 +306,7 @@ const NavBar = () => {
                             textAlign: "left",
                             padding: "5px 6px",
                           }}
-                          className="btn m-2"
+                          className="btn btn-outline-danger m-2"
                         >
                           <i className="fa fa-sign-out me-2 ps-2"></i>Logout
                         </button>

@@ -36,7 +36,7 @@ const ContactForm = () => {
       Swal.fire({
         title: "Thank you!",
         text: `Hello, Mr ${formData.firstName}. Your message has been sent successfully. We will get in touch with you soon.`,
-        icon: "success",
+        // icon: "success",
         confirmButtonText: "OK",
         confirmButtonColor:"#261F55",
         showClass: {
