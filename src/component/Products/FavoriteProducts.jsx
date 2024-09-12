@@ -35,7 +35,7 @@ function FavoriteProducts() {
         Swal.fire({
           title: "Deleted!",
           text: "Your Favorite Products have been deleted.",
-          icon: "success",
+          // icon: "success",
           showClass: {
             popup: "animate__animated animate__fadeInDown",
           },

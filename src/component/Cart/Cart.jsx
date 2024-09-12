@@ -31,7 +31,7 @@ function Cart() {
         dispatch(clearCart());
         Swal.fire({
           title: "Deleted!",
-          icon: "success",
+          // icon: "success",
           text: "Your cart has been cleared!",
           showClass: {
             popup: 'animate__animated animate__fadeInDown'
