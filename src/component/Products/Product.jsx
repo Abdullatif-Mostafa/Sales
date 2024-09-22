@@ -18,7 +18,7 @@ const Product = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`http://localhost:4000/Products/${id}`)
+    fetch(`https://sales-aapi-git-main-sales-projects-8932005b.vercel.app/Products/${id}`)
       .then((res) => res.json())
       .then((json) => {
         setProduct(json.data);
