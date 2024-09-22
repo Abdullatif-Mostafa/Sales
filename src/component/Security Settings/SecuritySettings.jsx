@@ -77,7 +77,7 @@ const SecuritySettings = () => {
       }
 
       // إرسال طلب لتحديث الباسورد الجديد إلى الخادم
-      const response = await fetch(`https://sales-aapi-git-main-sales-projects-8932005b.vercel.app/${User._id}`, {
+      const response = await fetch(`https://sales-aapi-git-main-sales-projects-8932005b.vercel.app/Users/${User._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -149,7 +149,7 @@ const SecuritySettings = () => {
       if (result.isConfirmed) {
         try {
           // إرسال طلب حذف الحساب إلى الخادم
-          const response = await fetch(`https://sales-aapi-git-main-sales-projects-8932005b.vercel.app/${User._id}`, {
+          const response = await fetch(`https://sales-aapi-git-main-sales-projects-8932005b.vercel.app/Users/${User._id}`, {
             method: "DELETE",
             headers: {
               "Content-Type": "application/json",
