@@ -21,6 +21,7 @@ const SecuritySettings = () => {
   console.log("user ", User);
   const oldPassword = User?.password;
   console.log(" oldPassword ", oldPassword);
+  
   // console.log(" email ", User.email);
   // console.log(" id ", User._id);
 

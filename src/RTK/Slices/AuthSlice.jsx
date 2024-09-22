@@ -29,6 +29,7 @@ export const registerUser = createAsyncThunk('auth/registerUser', async (userInf
   
   // Store token and user data in localStorage
   localStorage.setItem('token', data.token);
+  localStorage.setItem('user', JSON.stringify(data.user));
   localStorage.setItem('username', data.user.username);
   localStorage.setItem('userId', data.user._id);
 
@@ -58,6 +59,7 @@ export const loginUser = createAsyncThunk('auth/loginUser', async (credentials) 
 
   // Store token and user data in localStorage
   localStorage.setItem('token', data.token);
+  localStorage.setItem('user', JSON.stringify(data.user));
   localStorage.setItem('username', data.user.username);
   localStorage.setItem('userId', data.user._id);
 
