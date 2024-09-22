@@ -53,7 +53,7 @@ function Products() {
       </button>
     </div>
         <div className="row">
-          {filter.map((product) => (
+          {filter?.map((product) => (
             <ProductCard product={product} key={product.id} />
           ))}
         </div>

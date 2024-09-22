@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 // Define the async thunk for fetching products
 export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
-  const response = await fetch('http://localhost:4000/Products');
+  const response = await fetch('https://sales-aapi-git-main-sales-projects-8932005b.vercel.app/Products');
   const data = await response.json();
   console.log("data ", data.data);
   return data.data; // Assuming the API response is { data: [...] }

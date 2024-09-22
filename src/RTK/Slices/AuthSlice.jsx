@@ -4,7 +4,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 export const registerUser = createAsyncThunk('auth/registerUser', async (userInfo) => {
   const { username, email, password } = userInfo;
   console.log(userInfo);
-  const response = await fetch('http://localhost:4000/users/register', {
+  const response = await fetch('https://sales-aapi-git-main-sales-projects-8932005b.vercel.app/users/register', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ export const registerUser = createAsyncThunk('auth/registerUser', async (userInf
 export const loginUser = createAsyncThunk('auth/loginUser', async (credentials) => {
   const { email, password } = credentials;
 
-  const response = await fetch('http://localhost:4000/Users/login', {
+  const response = await fetch('https://sales-aapi-git-main-sales-projects-8932005b.vercel.app/Users/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

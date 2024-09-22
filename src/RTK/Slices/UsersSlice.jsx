@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const fetchUserData=createAsyncThunk('user/fetchUserData',async()=>{
-    const res = await fetch("http://localhost:3000/users");
+    const res = await fetch("https://sales-aapi-git-main-sales-projects-8932005b.vercel.app/users");
     const data = await res.json();
     // console.log(data);
     return data;
