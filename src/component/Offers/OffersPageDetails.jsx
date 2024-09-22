@@ -16,7 +16,7 @@ function OffersPageDetails() {
 
   const fetching = async () => {
     try {
-      const response = await fetch(`http://localhost:4000/Products/offers/${offerId}`);
+      const response = await fetch(`https://sales-aapi-git-main-sales-projects-8932005b.vercel.app/Products/offers/${offerId}`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

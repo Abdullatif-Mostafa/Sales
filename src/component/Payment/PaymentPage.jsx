@@ -8,6 +8,7 @@ const PaymentPage = () => {
     const dispatch = useDispatch();
     
     var total = 0;
+
     const itemList = (item) => {
         total = total + item.price;
         return (
