@@ -31,7 +31,7 @@ const SecuritySettings = () => {
   if (!oldPassword) {
     Swal.fire({
       text: "Current password is not available",
-      icon: "error",
+      // icon: "error",
       showClass: {
         popup: "animate__animated animate__fadeInDown",
       },
@@ -52,7 +52,7 @@ const SecuritySettings = () => {
       if (!isMatch) {
         Swal.fire({
           text: "Invalid Current Password",
-          icon: "error",
+          // icon: "error",
           showClass: {
             popup: "animate__animated animate__fadeInDown",
           },
@@ -65,7 +65,7 @@ const SecuritySettings = () => {
       if (newPassword !== confirmPassword) {
         Swal.fire({
           text: "Passwords do not match!",
-          icon: "error",
+          // icon: "error",
           showClass: {
             popup: "animate__animated animate__fadeInDown",
           },
@@ -77,7 +77,7 @@ const SecuritySettings = () => {
       }
 
       // إرسال طلب لتحديث الباسورد الجديد إلى الخادم
-      const response = await fetch(`http://localhost:4000/Users/${User._id}`, {
+      const response = await fetch(`https://sales-aapi-git-main-sales-projects-8932005b.vercel.app/${User._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -91,7 +91,7 @@ const SecuritySettings = () => {
       if (response.ok && data.success) {
         Swal.fire({
           text: "Password updated successfully!",
-          icon: "success",
+          // icon: "success",
           showClass: {
             popup: "animate__animated animate__fadeInDown",
           },
@@ -106,7 +106,7 @@ const SecuritySettings = () => {
       } else {
         Swal.fire({
           text: "Password update failed!",
-          icon: "error",
+          // icon: "error",
           showClass: {
             popup: "animate__animated animate__fadeInDown",
           },
@@ -119,7 +119,7 @@ const SecuritySettings = () => {
       console.error("Error updating password:", error);
       Swal.fire({
         text: "An unexpected error occurred!",
-        icon: "error",
+        // icon: "error",
         showClass: {
           popup: "animate__animated animate__fadeInDown",
         },
@@ -133,7 +133,7 @@ const SecuritySettings = () => {
   const handelDeleteAccount = async () => {
     Swal.fire({
       title: "Delete Account",
-      icon: "warning",
+      // icon: "warning",
       text: "Are You Sure Want To Delete Your Account?",
       showCancelButton: true,
       confirmButtonText: "Yes ",
@@ -149,7 +149,7 @@ const SecuritySettings = () => {
       if (result.isConfirmed) {
         try {
           // إرسال طلب حذف الحساب إلى الخادم
-          const response = await fetch(`http://localhost:4000/Users/${User._id}`, {
+          const response = await fetch(`https://sales-aapi-git-main-sales-projects-8932005b.vercel.app/${User._id}`, {
             method: "DELETE",
             headers: {
               "Content-Type": "application/json",
@@ -159,7 +159,7 @@ const SecuritySettings = () => {
           if (response.ok) {
             Swal.fire({
               text: "The account has been deleted successfully!",
-              icon: "success",
+              // icon: "success",
               showClass: {
                 popup: "animate__animated animate__fadeInDown",
               },
@@ -174,7 +174,7 @@ const SecuritySettings = () => {
           } else {
             Swal.fire({
               text: "Failed to delete the account!",
-              icon: "error",
+              // icon: "error",
               showClass: {
                 popup: "animate__animated animate__fadeInDown",
               },
@@ -187,7 +187,7 @@ const SecuritySettings = () => {
           console.error("Error deleting account:", error);
           Swal.fire({
             text: "An unexpected error occurred!",
-            icon: "error",
+            // icon: "error",
             showClass: {
               popup: "animate__animated animate__fadeInDown",
             },
