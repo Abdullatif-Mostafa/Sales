@@ -17,16 +17,14 @@ const SecuritySettings = () => {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const User = useSelector((state) => state.auth?.user);
-  console.log("user ", User);
+  // const User = useSelector((state) => state.auth?.user);
+  // console.log("user ", User);
+  const User=localStorage.getItem("user")
   const oldPassword = User?.password;
   console.log(" oldPassword ", oldPassword);
 
   // console.log(" email ", User.email);
   // console.log(" id ", User._id);
-  const user=localStorage.getItem("user")
-  console.log(" user ",user);
-  
 
   if (!User) {
     return <div>Loading...</div>;
