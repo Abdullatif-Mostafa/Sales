@@ -21,9 +21,12 @@ const SecuritySettings = () => {
   console.log("user ", User);
   const oldPassword = User?.password;
   console.log(" oldPassword ", oldPassword);
-  
+
   // console.log(" email ", User.email);
   // console.log(" id ", User._id);
+  const user=localStorage.getItem("user")
+  console.log(" user ",user);
+  
 
   if (!User) {
     return <div>Loading...</div>;
