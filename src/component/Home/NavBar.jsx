@@ -238,7 +238,7 @@ const NavBar = () => {
                         }}
                       />
                       <span style={{ fontSize: "20px", marginLeft: "6px" }}>
-                        {User.substring(0, 10)}
+                        {User?.substring(0, 10)}
                       </span>
                       {/* <i className="fa fa-user me-2 fs-5"></i>Tifa */}
                     </a>

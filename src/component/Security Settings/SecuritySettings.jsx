@@ -19,8 +19,9 @@ const SecuritySettings = () => {
   const navigate = useNavigate();
   // const User = useSelector((state) => state.auth?.user);
   // console.log("user ", User);
-  const User=localStorage.getItem("user")
-  const oldPassword = User?.password;
+  const User = JSON.parse(localStorage.getItem("user"));
+  console.log("user ", User);
+  const oldPassword = User.password;
   console.log(" oldPassword ", oldPassword);
 
   // console.log(" email ", User.email);
@@ -46,7 +47,6 @@ const SecuritySettings = () => {
   
   const handlePasswordChange = async (event) => {
     event.preventDefault();
-
     try {
       // التحقق من أن الباسورد الحالي صحيح
       console.log(" ayfsd ",currentPassword,oldPassword)
