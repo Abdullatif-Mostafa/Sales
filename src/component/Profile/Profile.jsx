@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./profile.css"
-// import profileImage from "../../Images/abdo.png";
+import profileImage from "../../Images/avtar_edited.jpg";
 import "../Animation.css";
 
 const Profile = () => {
@@ -23,7 +23,7 @@ const Profile = () => {
     <div className="profile-container" style={{height:"86vh"}}>
       <div className="profile-card contact-form">
         <div className="avatar">
-          <img src={user?.avatar} alt={" imag"}/>
+          <img src={user?.avatar || profileImage} alt={" imag"}/>
         </div>
         <div className="profile-info">
           <h1>{user?.username}</h1>
