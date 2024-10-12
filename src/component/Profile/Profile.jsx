@@ -23,7 +23,7 @@ const Profile = () => {
     <div className="profile-container" style={{height:"84vh"}}>
       <div className="profile-card contact-form">
         <div className="avatar">
-          <img src={user?.avatar || profileImage} alt={" imag"}/>
+          <img src={profileImage} alt={" imag"}/>
         </div>
         <div className="profile-info">
           <h1>{user?.username}</h1>

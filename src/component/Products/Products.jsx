@@ -32,26 +32,26 @@ function Products() {
   const ShowProducts = () => {
     return (
       <>
-            <div
-      className="buttons mb-3 fs-3"
-      style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px' }}
-    >
-      <button className="btn btn-outline-dark" onClick={() => filterProduct('all')}>
-        All
-      </button>
-      <button className="btn btn-outline-dark" onClick={() => filterProduct("men's clothing")}>
-        Men's Clothing
-      </button>
-      <button className="btn btn-outline-dark" onClick={() => filterProduct("women's clothing")}>
-        Women's Clothing
-      </button>
-      <button className="btn btn-outline-dark" onClick={() => filterProduct('jewelery')}>
-        Jewelry
-      </button>
-      <button className="btn btn-outline-dark" onClick={() => filterProduct('electronics')}>
-        Electronics
-      </button>
-    </div>
+        <div
+          className="buttons mb-3 fs-3"
+          style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px' }}
+        >
+          <button className="btn btn-outline-dark" onClick={() => filterProduct('all')}>
+            All
+          </button>
+          <button className="btn btn-outline-dark" onClick={() => filterProduct("men's clothing")}>
+            Men's Clothing
+          </button>
+          <button className="btn btn-outline-dark" onClick={() => filterProduct("women's clothing")}>
+            Women's Clothing
+          </button>
+          <button className="btn btn-outline-dark" onClick={() => filterProduct('jewelery')}>
+            Jewelry
+          </button>
+          <button className="btn btn-outline-dark" onClick={() => filterProduct('electronics')}>
+            Electronics
+          </button>
+        </div>
         <div className="row">
           {filter?.map((product) => (
             <ProductCard product={product} key={product.id} />
@@ -81,5 +81,4 @@ function Products() {
     </div>
   );
 }
-
 export default Products;
