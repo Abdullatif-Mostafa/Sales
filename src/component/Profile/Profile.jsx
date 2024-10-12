@@ -20,7 +20,7 @@ const Profile = () => {
   },[])
   console.log(user)
   return (
-    <div className="profile-container" style={{height:"86vh"}}>
+    <div className="profile-container" style={{height:"84vh"}}>
       <div className="profile-card contact-form">
         <div className="avatar">
           <img src={user?.avatar || profileImage} alt={" imag"}/>
