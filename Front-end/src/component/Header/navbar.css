@@ -63,7 +63,8 @@ color: #fed326 !important;
     padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #ffffff;
+    color: #212529;
+    /* color: #ffffff; */
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;

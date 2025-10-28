@@ -1,6 +1,5 @@
 import Home from "./component/Home/Home";
 import Login from "./component/Login/Login";
-import NavBar from "./component/Home/NavBar";
 import Product from "./component/Products/Product";
 import Products from "./component/Products/Products";
 import { Route, Routes } from "react-router";
@@ -27,6 +26,7 @@ import OffersPage from "./component/Offers/Offers";
 import OffersPageDetails from "./component/Offers/OffersPageDetails";
 import AboutPage from './component/About/About';
 import Cart from './component/Cart/Cart';
+import NavBar from "./component/Header/NavBar";
 function App() {
   return (
     <>

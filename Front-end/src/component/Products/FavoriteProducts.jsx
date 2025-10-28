@@ -8,6 +8,7 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import { addToCart, removeFromCart } from "../../RTK/Slices/CartSlice";
 import Swal from "sweetalert2";
+import { useToast } from "@chakra-ui/react"; // Import Chakra UI Toast
 import "./product.css";
 
 function FavoriteProducts() {
@@ -15,27 +16,28 @@ function FavoriteProducts() {
   const favoriteProduct = useSelector((state) => state.favoriteProducts.items);
   const cartDetails = useSelector((state) => state.cart.items || []); // Ensure cartDetails is an array
   const dispatch = useDispatch();
+  const toast = useToast(); // Initialize Chakra UI Toast
 
   const handelClearFavoriteProducts = () => {
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert them!",
-      // icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
       confirmButtonText: "Yes, delete them!",
-      showClass:{
-        popup: 'animate__animated animate__fadeInDown'},
+      showClass: {
+        popup: "animate__animated animate__fadeInDown",
+      },
       hideClass: {
-        popup: 'animate__animated animate__fadeOutUp' },
+        popup: "animate__animated animate__fadeOutUp",
+      },
     }).then((result) => {
       if (result.isConfirmed) {
         dispatch(clearFavorites());
         Swal.fire({
           title: "Deleted!",
           text: "Your Favorite Products have been deleted.",
-          // icon: "success",
           showClass: {
             popup: "animate__animated animate__fadeInDown",
           },
@@ -63,9 +65,20 @@ function FavoriteProducts() {
     }).then((result) => {
       if (result.isConfirmed) {
         dispatch(removeFromFavorites(product));
+
+        // Show Chakra UI Toast after deletion
+        toast({
+          title: "Product Removed",
+          description: "The product has been successfully removed.",
+          status: "success",
+          duration: 3000,
+          isClosable: true,
+          position: "top", // Toast at the top
+        });
       }
     });
   };
+
   const handleAddToCart = (product) => {
     const isProductInCart = cartDetails.some(
       (cartProduct) => cartProduct._id === product._id
@@ -76,9 +89,11 @@ function FavoriteProducts() {
       dispatch(removeFromCart(product));
     }
   };
+
   const handelProduct = (id) => {
     navigate(`/products/${id}`);
   };
+
   return (
     <>
       <h1 style={{ textAlign: "center", marginTop: "30px" }}>
@@ -157,10 +172,6 @@ function FavoriteProducts() {
                           }`}
                           onClick={() => handleAddToCart(product)}
                         >
-                          {/* {isProductInCart
-                            ? "Remove from Cart"
-                            : "Add to Cart"} */}
-                          {/* add to cart */}
                           <i className="fa fa-shopping-cart me-2 fs-3"></i>
                         </button>
                         <Link

@@ -221,7 +221,7 @@ const NavBar = () => {
                   </Link>
                   <div className="nav-item dropdown ms-3">
                     <a
-                      className="nav-link dropdown-toggle"
+                      className="nav-link dropdown-toggle d-flex align-items-center flex-direction-row"
                       href="# "
                       id="navbarDropdown"
                       role="button"
@@ -238,12 +238,12 @@ const NavBar = () => {
                         }}
                       />
                       <span style={{ fontSize: "20px", marginLeft: "6px" }}>
-                        {User?.substring(0, 10)}
+                        {User?.substring(0, 10)} 
                       </span>
-                      {/* <i className="fa fa-user me-2 fs-5"></i>Tifa */}
                     </a>
                     <ul
-                      className="dropdown-menu mt-0"
+                      style={{background:"#cdcdcdff"}}
+                      className="dropdown-menu  mt-0"
                       aria-labelledby="navbarDropdown"
                     >
                       <li>
